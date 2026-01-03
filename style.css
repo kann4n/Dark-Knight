@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
-
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #ffffff;
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
-h1 {
+#background-canvas{
     position: absolute;
-    top: 5%;
-    left: 5%;
-    transform: translateY(-50%);
-    z-index: 100;
-    font-family: "Barriecito", system-ui;
-    font-weight: 400;
-    font-size: 3rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-canvas {
+#embed-iframe{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#fight-canvas{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
 }
