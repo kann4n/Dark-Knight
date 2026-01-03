@@ -1,7 +1,7 @@
 /** @type {HTMLCanvasElement} */
 class TreeScene {
-    constructor(canvas) {
-        this.canvas = canvas;
+    constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
         this.ctx = this.canvas.getContext('2d');
         this.leaves = [];
         

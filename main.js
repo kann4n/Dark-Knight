@@ -4,7 +4,7 @@ const Bgrndnctx = BackgrndCanvas.getContext('2d');
 
 Bgrndnctx.translate(-100, -100);
 // Instantiate the class to run the code
-const treeScene = new TreeScene(BackgrndCanvas);
+const treeScene = new TreeScene('background-canvas');
 treeScene.init();
 
 /** @type {HTMLCanvasElement} */
